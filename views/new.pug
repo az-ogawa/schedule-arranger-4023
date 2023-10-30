@@ -5,11 +5,14 @@ block content
     input(type="hidden" name="_csrf" value!=csrfToken)
     div.mb-3
       label.form-label(for="scheduleName") 予定名
+      label.badge.badge-danger.text-bg-danger.small.px-1.py-0 必須
       input#scheduleName.form-control(type="text" name="scheduleName" required="required")
     div.mb-3
       label.form-label(for="memo") メモ
+      label.badge.badge-danger.text-bg-danger.small.px-1.py-0 必須
       textarea#memo.form-control(name="memo" required="required")
     div.mb-3
       label.form-label(for="candidates") 候補日程 (改行して複数入力してください)
+      label.badge.badge-danger.text-bg-danger.small.px-1.py-0 必須
       textarea#candidates.form-control(name="candidates" rows="4" required="required")
     button.btn.btn-primary(type="submit") 予定をつくる
